@@ -21,7 +21,7 @@ module.exports = [
   // Load jsx extensions with babel so we can use
   // 'import' instead of 'require' and es6 syntax
   {
-    test: /\.jsx?$/,
+    test: /\.js?$/,
     include: path.resolve(__dirname, 'src'),
     loader: "babel-loader",
     options: {
@@ -30,7 +30,7 @@ module.exports = [
       // directory for faster rebuilds.
       cacheDirectory: true,
       plugins: ['react-hot-loader/babel'],
-    }
+    },
   },
   // =========
   // = Fonts =
@@ -127,7 +127,7 @@ module.exports = [
   // ==============================
   {
     test: /\.css/,
-    include: path.resolve(__dirname, "node_modules"),
+    include: path.resolve(__dirname, "styles/"),
     use: [
       {
         loader: "style-loader"
