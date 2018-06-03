@@ -8,8 +8,6 @@ import Menu from './components/Menu';
 import data from '../data/recipes.json';
 import Navigation from './components/Navigation';
 
-console.log(data);
-
 const Routes = () => (
   <Router>
     <div>
