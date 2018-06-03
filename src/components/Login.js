@@ -18,9 +18,9 @@ class Login extends Component {
     }
     handleFormSubmit(e){
         e.preventDefault();
-      
+
         this.Auth.login(this.state.username,this.state.password)
-            .then(res =>{
+            .then(() =>{
                this.props.history.replace('/');
             })
             .catch(err =>{
@@ -74,7 +74,7 @@ class Login extends Component {
         );
     }
 
-   
+
 }
 
 export default Login;
