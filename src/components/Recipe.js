@@ -1,5 +1,7 @@
 import IngredientsList from './IngredientsList';
 import Instructions from './Instructions';
+import Summary from './Summary';
+
 
 const Recipe = ({ name, ingredients, steps}) =>
   (
@@ -8,6 +10,7 @@ const Recipe = ({ name, ingredients, steps}) =>
         <IngredientsList list={ingredients} />
         <Instructions title="Cooking Instructions"
                       steps={steps} />
+        <Summary ingredients={ingredients} steps={steps}/>
     </section>
   );
 

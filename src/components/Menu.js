@@ -12,8 +12,8 @@ const Menu = ({ recipes }) =>
                 <Recipe key={i} {...recipe} />)
             }
         </div>
-    </article>)
+    </article>);
 
-Menu.displayName = 'Menu'
+Menu.displayName = 'Menu';
 
 export default Menu
