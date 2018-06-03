@@ -79,7 +79,7 @@ export default class AuthService {
 
     return fetch(url, {
       headers,
-      options
+      body:options
     })
       .then(this._checkStatus)
       .then(response => response.json())
