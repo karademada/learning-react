@@ -1,8 +1,9 @@
 import React from 'react';
+import StarRating from './StarRatingStatefull';
 
 const Sample = () => (
   <div>
-    test
+    <StarRating totalStars={7} starsSelected={3} />
   </div>
 );
 

@@ -1,6 +1,6 @@
 body,
 html,
-#root{
+#root {
     height: 100%;
 }
 
@@ -17,7 +17,7 @@ p, td, span, div {
     background-color: #EEE;
 }
 
-article>header {
+article > header {
     font-family: Verdana, sans-serif;
     font-size: 1.2em;
     color: darkslateblue;
@@ -25,9 +25,67 @@ article>header {
     margin-bottom: 1em;
 }
 
-div.recipes>section {
+div.recipes > section {
     border: double 4px saddlebrown;
     padding: 1em;
     background-color: white;
     margin-bottom: 1em;
 }
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.star-rating {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.star {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    background-color: grey;
+    -webkit-clip-path: polygon(
+            50% 0%,
+            63% 38%,
+            100% 38%,
+            69% 59%,
+            82% 100%,
+            50% 75%,
+            18% 100%,
+            31% 59%,
+            0% 38%,
+            37% 38%
+    );
+    clip-path: polygon(
+            50% 0%,
+            63% 38%,
+            100% 38%,
+            69% 59%,
+            82% 100%,
+            50% 75%,
+            18% 100%,
+            31% 59%,
+            0% 38%,
+            37% 38%
+    );
+
+}
+
+.star.selected {
+    background-color: red;
+
+}
+
+p {
+    flex-basis: 100%;
+    text-align: center;
+
+}
+

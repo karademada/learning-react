@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {AppContainer} from 'react-hot-loader'
 import Routes from './routes'
+
+
 window.React = React;
 
 const renderApp = (Component) => {
